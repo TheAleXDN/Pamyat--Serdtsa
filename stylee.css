@@ -149,8 +149,7 @@ footer {
 
 .menu-list_item {
     text-decoration: none;
-    padding-left:21px;  
- 
+    padding-left: 21px;
 }
 
 
@@ -179,9 +178,8 @@ footer {
 }
 
 .menu-list_itemactive {
-
- padding-left: 20px;
- padding-right: 10px;
+    padding-left: 20px;
+    padding-right: 10px;
     text-decoration: underline;
     white-space: nowrap;
 }
@@ -354,6 +352,7 @@ footer {
 
 /* стилизуем кнопку */
 .main-menu__btn_Polina {
+
     display: flex; /* используем flex для центрирования содержимого */
     align-items: center; /* центрируем содержимое кнопки */
     position: absolute;
@@ -363,31 +362,39 @@ footer {
     height: 26px;
     cursor: pointer;
     z-index: 100000;
+
 }
 
-    /* добавляем "гамбургер" */
-    .main-menu__btn_Polina > span,
-    .main-menu__btn_Polina > span::before,
-    .main-menu__btn_Polina > span::after {
-        display: block;
-        position: absolute;
-        width: 100%;
-        height: 2px;
-        background-color: #000000;
-    }
+/* добавляем "гамбургер" */
+.main-menu__btn_Polina > span,
+.main-menu__btn_Polina > span::before,
+.main-menu__btn_Polina > span::after {
 
-        .main-menu__btn_Polina > span::before {
-            content: '';
-            top: -8px;
-        }
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #000000;
 
-        .main-menu__btn_Polina > span::after {
-            content: '';
-            top: 8px;
-        }
+}
+
+.main-menu__btn_Polina > span::before {
+
+    content: '';
+    top: -8px;
+
+}
+
+.main-menu__btn_Polina > span::after {
+
+    content: '';
+    top: 8px;
+
+}
 
 /* контейнер меню */
 .main-menu__box_Polina {
+
     display: block;
     position: fixed;
     visibility: hidden;
@@ -402,314 +409,354 @@ footer {
     background-color: aliceblue;
     box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
     z-index: 10000;
+
 }
 
 /* элементы меню */
 .main-menu__item1_Polina, .main-menu__item2_Polina, .main-menu__item3_Polina, .main-menu__item4_Polina {
+
     display: block;
     padding: 12px 24px;
     font-size: 3.6vh;
     color: #333;
     text-decoration: none;
+
 }
 
-    .main-menu__item1_Polina:hover, .main-menu__item2_Polina:hover, .main-menu__item3_Polina:hover, .main-menu__item4_Polina:hover {
-        background: linear-gradient(to right, #75757595, #757575, #757575, #75757595);
-        color: #d6d6d6;
-    }
+.main-menu__item1_Polina:hover, .main-menu__item2_Polina:hover, .main-menu__item3_Polina:hover, .main-menu__item4_Polina:hover {
+
+    background: linear-gradient(to right, #75757595, #757575, #757575, #75757595);
+    color: #d6d6d6;
+
+}
 
 #main-menu__toggle_Polina:checked ~ .main-menu__btn_Polina > span {
+
     transform: rotate(45deg);
+
 }
 
-    #main-menu__toggle_Polina:checked ~ .main-menu__btn_Polina > span::before {
-        top: 0;
-        transform: rotate(0);
-    }
+#main-menu__toggle_Polina:checked ~ .main-menu__btn_Polina > span::before {
 
-    #main-menu__toggle_Polina:checked ~ .main-menu__btn_Polina > span::after {
-        top: 0;
-        transform: rotate(90deg);
-    }
+    top: 0;
+    transform: rotate(0);
+
+}
+
+#main-menu__toggle_Polina:checked ~ .main-menu__btn_Polina > span::after {
+
+    top: 0;
+    transform: rotate(90deg);
+
+}
 
 #main-menu__toggle_Polina:checked ~ .main-menu__box_Polina {
+
     visibility: visible;
     right: 0;
+
 }
 
 .main-menu__btn_Polina > span,
 .main-menu__btn_Polina > span::before,
 .main-menu__btn_Polina > span::after {
+
     transition-duration: .25s;
+
 }
 
 .main-menu__box_Polina {
+
     transition-duration: .25s;
+
 }
 
 .main-menu__item1_Polina, .main-menu__item2_Polina, .main-menu__item3_Polina, .main-menu__item4_Polina {
+
     transition-duration: .25s;
+
 }
 
+.text1 {
 
+    margin-left: -1vw;
 
-@media only screen and (max-width:1920px){
-
-.menu-list{
-
-    font-size: 40x;
 }
-    .text1{
-  
+
+.text2 {
+
+    margin-top: 1vw;
+
+}
+
+.text3 {
+
+    margin-top: 2vw;
+    margin-left: -1vw;
+
+}
+
+@media only screen and (max-width:1920px) {
+
+    .menu-list {
+
+        font-size: 40x;
+
+    }
+
+    .text1 {
+
         margin-left: 10vw;
+
     }
-    .text2{
+
+    .text2 {
+
         margin-top: 1vw;
+
     }
-    
-    .text3{
+
+    .text3 {
+
         margin-top: 2vw;
         margin-left: -1vw;
+
     }
-    
 
-
-
-
-
-} 
+}
 
 @media only screen and (max-width:1680px) {
 
     .container {
+
         width: 76.17vw;
         margin: 0 auto;
+
     }
 
     .menu-list {
+
         text-shadow: 0.10vw 0.10vw 0.42vw;
         font-weight: 78.13vw;
         font-size: 1.56vw;
         line-height: 1.56vw;
         letter-spacing: 0.06em;
+
     }
 
     .imge {
+
         width: 9vw;
         height: 9vw;
+
     }
 
     .En {
+
         width: 2vw;
         height: 2vw;
+
     }
 
     .Bel {
+
         width: 2vw;
         height: 2vw;
+
     }
 
-   
 }
 
 
 @media only screen and (max-width:1440px) {
 
     .container {
+
         width: 90.57vw;
         margin: 0 auto;
+
     }
 
     .menu-list {
+
         text-shadow: 0.10vw 0.10vw 0.42vw;
         font-weight: 78.13vw;
         font-size: 1.56vw;
         line-height: 1.56vw;
         letter-spacing: 0.06em;
+
     }
 
     .imge {
+
         width: 9vw;
         height: 9vw;
+
     }
 
     .En {
+
         width: 2vw;
         height: 2vw;
+
     }
 
     .Bel {
+
         width: 2vw;
         height: 2vw;
     }
 
-    
 }
 
 @media only screen and (max-width:1280px) {
 
     .container {
+
         width: 96.14vw;
         margin: 0 auto;
+
     }
 
     .menu-list {
+
         text-shadow: 0.10vw 0.10vw 0.42vw;
         font-weight: 78.13vw;
         font-size: 1.56vw;
         line-height: 1.56vw;
         letter-spacing: 0.06em;
+
     }
 
     .imge {
+
         width: 9vw;
         height: 9vw;
+
     }
 
     .En {
+
         width: 2vw;
         height: 2vw;
+
     }
 
     .Bel {
+
         width: 2vw;
         height: 2vw;
+
     }
 
 }
-
-
-
 
 @media only screen and (max-width:1152px) {
 
     .container {
+
         width: 96.14vw;
         margin: 0 auto;
+
     }
 
     .menu-list {
+
         text-shadow: 0.10vw 0.10vw 0.42vw;
         font-weight: 78.13vw;
         font-size: 1.56vw;
         line-height: 1.56vw;
         letter-spacing: 0.06em;
+
     }
 
     .imge {
+
         width: 9vw;
         height: 9vw;
     }
 
     .En {
+
         width: 2vw;
         height: 2vw;
+
     }
 
     .Bel {
+
         width: 2vw;
         height: 2vw;
+
     }
 
 }
-.text1{
-  
-    margin-left: -1vw;
-}
-.text2{
-    margin-top: 1vw;
-}
-
-.text3{
-    margin-top: 2vw;
-    margin-left: -1vw;
-}
-
-
-
 
 @media only screen and (max-width:1080px) {
 
-   
-
-    .main-hamburger-menu_Polina{
-
+    .main-hamburger-menu_Polina {
         display: inline-block;
-
     }
 
     .container {
-
         width: 98.25vw;
         display: flex;
-
     }
 
-    
-
     .menu-list {
-
         text-shadow: 0.10vw 0.10vw 0.42vw;
         font-weight: 48.13vw;
         font-size: 4vw;
         line-height: 1.56vw;
         display: none;
-   
     }
 
     .imge {
-        margin-top:1vw;
-        margin-bottom:1vw;
+        margin-top: 1vw;
+        margin-bottom: 1vw;
         width: 8vh;
         height: 8vh;
-
     }
 
     .imga {
-
         display: none;
-
     }
 
     .imga {
-
         width: 80%;
         height: 80%;
-
     }
 
     .En {
         margin-top: 1vw;
         width: 5vh;
         height: 5vh;
-        margin-bottom:1vw;
+        margin-bottom: 1vw;
     }
 
     .Bel {
         margin-top: 1vw;
         width: 5vh;
         height: 5vh;
-        margin-bottom:1vw;
+        margin-bottom: 1vw;
     }
 
     .Ru {
         margin-top: 1vw;
         width: 3vh;
         height: 3vh;
-        margin-bottom:1vw;
-        display: none
+        margin-bottom: 1vw;
     }
 
     .ru {
         margin-top: 1vw;
         width: 2.7vw;
         height: 2.7vw;
-        margin-bottom:1vw;
+        margin-bottom: 1vw;
     }
 
 
     .text1, .text2, .text3, .text4 {
-
         font-size: 3.6vh;
         text-align: center;
         width: 100%;
@@ -724,53 +771,33 @@ footer {
         bottom: 0;
         top: 0;
         position: inherit;
-
     }
 
     .text4 {
-
         display: none;
-
     }
 
     .navrod {
-
         display: flex;
         justify-content: flex-end;
         align-items: flex-end;
-
     }
-
-
-    @media only screen and (max-width:1024px) {
-
-        .menu {
-            visibility: hidden;
-        }
-    
-        .main-hamburger-menu_Polina {
-            visibility: initial;
-         position: static;
-        }
-    }
-
-
-
-
-
-
-
 
 }
 
+@media only screen and (max-width:1024px) {
 
+    .menu {
 
+        visibility: hidden;
 
+    }
 
+    .main-hamburger-menu_Polina {
 
+        visibility: initial;
+        position: static;
 
+    }
 
-
-
-
-
+}
